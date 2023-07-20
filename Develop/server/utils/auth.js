@@ -37,3 +37,16 @@ module.exports = {
     return jwt.sign({ data: payload }, secret, { expiresIn: expiration });
   },
 };
+
+const  { AuthenticationError } = require('apollo-server-express');
+
+const authMiddleware = ({ req }) => {
+  const token = req.headers.authorization || '';
+  const user = verifyTokenAndGetUser(token);
+  if (!user) {
+    throw new AuthenticationError('Invalid token or authentication failed.');
+  }
+  return { user };
+};
+
+module.exports = authMiddleware;
