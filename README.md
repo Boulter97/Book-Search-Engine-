@@ -14,7 +14,7 @@ To fulfill the Challenge, I needed to do the following:
 
 4. Deploy the application to Heroku.
 
-Dev Notes:- 
+Dev Notes:- Wasn't able to complete, had some real problems with deploying to heroku, and wasnt apply to finish the application
 
  
 **User Story**
@@ -57,7 +57,7 @@ Dev Notes:-
 
 **Deployed link & Screenshot**
 -
-- Put Link here to video 
+- As application was completed both deployed link and screenshots are not available at this time.
 
 
 **References & Resources**
